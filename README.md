@@ -546,7 +546,19 @@ systemctl status haproxy
 
 ## Немного автоматизации
 
-Ansible [install-ha.yaml](https://github.com/BigKAA/00-kube-ansible/blob/main/services/install-ha.yaml)
+Ansible 
+
+yaml ```
+
+---
+- name: Install HA on control nodes
+  hosts: k8s_masters
+
+  roles:
+    - role: ha
+```
+
+[install-ha.yaml](https://github.com/BigKAA/00-kube-ansible/blob/main/services/install-ha.yaml)
 
 
 ### Правила приёма работы
