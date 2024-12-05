@@ -381,7 +381,8 @@ ansible-playbook  -i inventory/mycluster/hosts.yaml cluster.yml -b -v &
 
 На рисунке показано что и как будет взаимодействовать.
 
-![](images/ha_cluster.jpg)
+<img width="529" alt="HA" src="https://github.com/user-attachments/assets/bff71a65-dee5-4717-b932-4a79e2b38621">
+
 
 В первую очередь нам понадобится кластерный IP адрес (в нашем примере это 192.168.219.189). 
 Этот IP будет подниматься на одной из control node кластера. Если нода, на которой он был включён, по какой-то причине
